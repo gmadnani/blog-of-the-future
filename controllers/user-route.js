@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const { User } = require('../models');
 
 router.post('/', async (req, res) => {
   try {
@@ -56,6 +56,7 @@ router.post('/logout', (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
       res.status(204).end();
+      res.json({ message: 'You are now logged out!' });
     });
   } else {
     res.status(404).end();
