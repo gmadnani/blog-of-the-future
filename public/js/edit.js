@@ -15,7 +15,7 @@ const editFormHandler = async (event) => {
   console.log(postTitle);
   console.log(postContent);
 
-  const response = await fetch(`/api/post/${postId}`, {
+  const response = await fetch(`/post/${postId}`, {
     method: 'PUT',
     body: JSON.stringify({
       postTitle,
@@ -30,19 +30,19 @@ const editFormHandler = async (event) => {
   if (response.ok) {
     document.location.replace('/dashboard');
   } else {
-    alert('Failed to update your post');
+    alert('Failed to update your post do some changes');
   }
   document.location.replace('/dashboard');
 };
 
 const deleteClickHandler = async () => {
-  await fetch(`/api/post/${postId}`, {
+  await fetch(`/post/${postId}`, {
     method: 'DELETE'
   });
 
   document.location.replace('/dashboard');
 };
-// WHY ONE BUTTON IS SUBMIT AND THE OTHER IS CLICK?
+
 document
   .querySelector('#edit-post-form')
   .addEventListener('submit', editFormHandler);

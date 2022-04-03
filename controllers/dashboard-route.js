@@ -20,7 +20,7 @@ console.log(posts);
   }
 });
 
-router.get('/new', withAuth, (req, res) => {
+router.get('/newpost', withAuth, (req, res) => {
   res.render('new-post', {
     layout: 'dashboard',
   });
