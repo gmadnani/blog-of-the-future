@@ -5,7 +5,6 @@
 - [Description](#description)
 - [Installations](#installations)
 - [Run](#run)
-- [Video](#video)
 - [Website](#website)
 - [License](#license)
 
