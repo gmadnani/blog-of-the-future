@@ -31,7 +31,7 @@ p {
   font-size: 2.5rem;
   color: black;
 }
-.lead, .comment{
+.lead, .comment, .card-text{
   color: black;
 }
 
