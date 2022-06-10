@@ -1,10 +1,28 @@
 module.exports = {
-    format_time: (date) => {
-      return date.toLocaleTimeString();
-    },
-    format_date: (date) => {
-      return `${new Date(date).getMonth() + 1}/${new Date(date).getDate()}/${
-        new Date(date).getFullYear()
-      }`;
-    },
-  };
+  format_date: (date) => {
+    // Format date to local format
+    return date.toLocaleDateString();
+  },
+  is_even: (num) => {
+    if (num % 2 == 0) {
+      return true;
+    }
+  },
+  is_odd: (num) => {
+    if (num % 2 != 0) {
+      return true;
+    }
+  },
+  make_substring: (str) => {
+    if (str.length > 100) return `${str.substring(0, 100)}...`;
+    return str;
+  },
+  upper_case: (str) => {
+    return str.toUpperCase();
+  },
+  user_match: (id, id2) => {
+    if (id === id2) {
+      return true;
+    }
+  },
+};
