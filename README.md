@@ -20,6 +20,24 @@ npm install
 ## Run
 node server.js
 
+## Screenshots
+
+<p align="center">
+  <img src="assets/home.png"  width="600" >
+  <p align="center">Fig 1: home page</p>
+  <br/>
+</p>
+
+<p align="center">
+  <img src="assets/login.png"  width="600" >
+  <p align="center">Fig 2: login page</p>
+  <br/>
+</p>
+
+<p align="center">
+  <img src="assets/dashboard.png"  width="600" >
+  <p align="center">Fig 3: dashboard page</p>
+</p>
 
 ## Website
 https://secure-springs-93132.herokuapp.com/
